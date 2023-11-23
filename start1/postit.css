@@ -1,0 +1,52 @@
+
+body{background-color: gray;}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+main > div {
+    flex: 1 16%;
+    margin: 1.2%;
+    padding: 1%;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    transition: rotate 1s, transform 1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+main h2{
+    margin-top: 20%;
+}
+main p{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+
+main > div:first-child, main > div:nth-child(5),  main > div:nth-child(7){
+    background-color: lightyellow;
+    rotate: -5deg;
+}
+
+main > div:nth-child(3),  main > div:nth-child(6){
+    background-color: rgba(128, 0, 128, 0.403);
+    rotate: -10deg;
+}
+
+main > div:nth-child(2),  main > div:nth-child(4),  main > div:nth-child(8){
+    background-color: lightgreen;
+    rotate: 10deg;
+}
+
+main > div:hover{
+    z-index: 1;
+    transform: scale(1.4);
+    rotate: 0deg;
+}
