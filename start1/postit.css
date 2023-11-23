@@ -5,13 +5,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
-    margin-top: 50px;
+    margin: 100px;
     font-family: 'Dancing Script', cursive;
 }
 
 main > div {
-    flex: 1 16%;
-    margin: 1.2%;
+    flex: 1 23%;
     padding: 1%;
     text-align: center;
     width: 300px;
